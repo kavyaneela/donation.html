@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>donation form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="image/donation.png" rel="icon" types="image/png">
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: monospace;
+            }
+            ul{
+                list-style: none;
+               
+            }
+            ul li{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+    
+            .donation{
+                text-align: center;
+                border-radius: 5px;
+                background-color: cadetblue;
+                color:darkred;
+                border: 5%;
+                border-color: red;
+            }
+            .details .text1{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            .fname{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+
+            }
+            .mail{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .phone{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .message{
+                width: 30%;
+                height: 50px;
+                border: 1px;
+            }
+            .amount{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .debit{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .debit1{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .credit{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .code{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .card{
+                width: 20%;
+                height: 30px;
+                border: 1px;
+            }
+            .submit{
+                width: 20%;
+                height: 30px;
+                background-color: aquamarine;
+                color:brown;
+            }
+            .reset{
+                width: 20%;
+                height: 30px;
+                background-color: aquamarine;
+                color:brown;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="donation">
+                <h1>Donation Form</h1>
+            </div>
+            <hr>
+            <br><br>
+            <div class="details">
+                <label class="text1">Full Name*</label><br>
+                <input type="text" class="fname" placeholder="First Name">
+                <input type="text" class="fname" placeholder="Last Name">
+                <br><br>
+                <label class="text1">E-mail *</label><br>
+                <input type="email" class="mail" placeholder="ex:myname@example.com">
+                <br><br>
+                <label class="text1">Phone Number *</label><br>
+                <input type="number" class="phone" placeholder="(000) 000-0000">
+                <br><br>
+                <label class="text1">Type of Donation *</label><br>
+                <input type="radio" name="offer" value="love offering">Love Offering<br>
+                <input type="radio" name="offer" value="building expansion">Building Expansion<br>
+                <input type="radio" name="offer" value="one time donation">One Time Donation
+                <br><br>
+                <label class="text1">Comments *</label><br>
+                <textarea class="message"></textarea>
+                <br><br>
+                <label class="text1">Donation Amount *</label><br>
+                <input type="number" class="amount" placeholder="USD">
+                <br><br>
+    
+                <label class="text1">Payment Methods </label><br>
+                <input type="radio" name="cards" value="debit card">Debit or Credit Card<br>
+                <ul>
+                <ul class="dropdown">
+                    <li><input type="text" class="debit" placeholder="First Name"></li>
+                    <li><input type="text" class="debit1" placeholder="Last Name"></li><br><br>
+                    <li><input type="text" class="credit" placeholder="Credit Card Number"></li>
+                    <li><input type="text" class="code" placeholder="Security Code"></li><br><br>
+                    <li><input type="text" class="card" placeholder="Card Expiration"></li>
+                </ul>
+                </ul>
+                <br>
+                <input type="radio" name="cards" value="pal">PayPal              
+                <br>
+                <hr>
+                <br><br>
+                <div align="center">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
